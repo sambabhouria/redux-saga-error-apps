@@ -8,6 +8,12 @@ const ErrorGenerator = ({ action ,  value}) => {
     console.log("valeur du value", value)
  return (
     <p>
+        <div style={{backgroundColor:'grey', marginBottom:'5px', marginTop:'15px', color:'white'}}>
+            Le mot-clé yield est utilisé pour suspendre et reprendre une fonction (function* ou une fonction génératrice historique).
+            La déclaration function* (le mot-clé function suivi par un astérisque) permet de définir un générateur 
+            (aussi appelé une fonction génératrice) (un générateur est un objet Generator).
+
+        </div>
       <Button variant="primary" style={{marginBottom:'5px', marginTop:'15px'}} onClick={() => action('ACTION_ERROR_IN_PUT')}>Action error in put :  </Button>{' '} <br/>
       <Button variant="secondary" style={{marginBottom:'5px'}} onClick={() => action('ACTION_ERROR_IN_SELECT')}>Action error in select</Button>{' '}<br/>
       <Button variant="success"  style={{marginBottom:'5px'}} onClick={() => action('ACTION_ERROR_IN_CALL_SYNC')}>Action error in call sync</Button>{' '}<br/>

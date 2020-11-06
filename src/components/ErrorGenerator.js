@@ -2,6 +2,7 @@ import * as React from 'react'
 import PropTypes from 'prop-types'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
+// https://fontawesome.com/v4.7.0/icons/
 
 const ErrorGenerator = ({ action ,  value}) => {
     console.log("valeur du value", value)
